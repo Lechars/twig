@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    <title>Aller a Auchan</title>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+    <div class="row">
+    {% for product in products %}
+        <div class="col col-4"">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{ product }}</h5>
+                <p class="card-text">{{ product }} is an awesome boardgame, you should try it!</p>
+            </div>
+        </div>
+        </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}
